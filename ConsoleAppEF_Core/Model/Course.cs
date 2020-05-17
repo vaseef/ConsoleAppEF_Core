@@ -8,5 +8,6 @@ namespace ConsoleAppEF_Core.Model
     {
         public int CourseId { get; set; }
         public string CourseName { get; set; }
+        public string CertificateName { get; set; }
     }
 }

@@ -9,8 +9,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ConsoleAppEF_Core.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20200517203418_CreateSchoolDB5")]
-    partial class CreateSchoolDB5
+    [Migration("20200517212422_CreateSchoolDB8")]
+    partial class CreateSchoolDB8
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

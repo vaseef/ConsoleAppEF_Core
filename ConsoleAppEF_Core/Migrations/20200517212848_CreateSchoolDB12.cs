@@ -2,12 +2,12 @@
 
 namespace ConsoleAppEF_Core.Migrations
 {
-    public partial class CreateSchoolDB5 : Migration
+    public partial class CreateSchoolDB12 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "CertificateName",
+                name: "Location",
                 table: "Courses",
                 nullable: true);
         }
@@ -15,7 +15,7 @@ namespace ConsoleAppEF_Core.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "CertificateName",
+                name: "Location",
                 table: "Courses");
         }
     }

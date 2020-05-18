@@ -34,6 +34,9 @@ namespace ConsoleAppEF_Core.Migrations
                     b.Property<string>("CourseName")
                         .HasColumnType("text");
 
+                    b.Property<string>("Location")
+                        .HasColumnType("text");
+
                     b.HasKey("CourseId");
 
                     b.ToTable("Courses");

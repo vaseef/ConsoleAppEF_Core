@@ -10,5 +10,7 @@ namespace ConsoleAppEF_Core.Model
         public string CourseName { get; set; }
         public string CertificateName { get; set; }
         public string College { get; set; }
+        public string Location { get; set; }
+        public string Contry { get; set; }
     }
 }

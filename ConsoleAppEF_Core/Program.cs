@@ -56,12 +56,10 @@ namespace ConsoleAppEF_Core
             {
                 var studentsWithSameName = cotxt.Students
                                       .Where(s => s.Name == "Riyan")
-                                      .ToList();
+                                      .ToList().FirstOrDefault();
 
-                foreach (var a in studentsWithSameName)
-                {
-                    Console.Out.WriteLine($"Name: {a.Name}, Physics: {a.Physics}");
-                }
+                studentsWithSameName.Physics = 99;
+                cotxt.SaveChanges();
             }
         }
 

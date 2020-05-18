@@ -9,8 +9,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ConsoleAppEF_Core.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20200517134211_CreateSchoolDB")]
-    partial class CreateSchoolDB
+    [Migration("20200517212703_CreateSchoolDB11")]
+    partial class CreateSchoolDB11
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,6 +27,12 @@ namespace ConsoleAppEF_Core.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
+                    b.Property<string>("CertificateName")
+                        .HasColumnType("text");
+
+                    b.Property<string>("College")
+                        .HasColumnType("text");
+
                     b.Property<string>("CourseName")
                         .HasColumnType("text");
 
@@ -42,8 +48,20 @@ namespace ConsoleAppEF_Core.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
+                    b.Property<int>("Chemistry")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("English")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Maths")
+                        .HasColumnType("integer");
+
                     b.Property<string>("Name")
                         .HasColumnType("text");
+
+                    b.Property<int>("Physics")
+                        .HasColumnType("integer");
 
                     b.HasKey("StudentId");
 

@@ -9,8 +9,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ConsoleAppEF_Core.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20200517143812_CreateSchoolDB4")]
-    partial class CreateSchoolDB4
+    [Migration("20200517212436_CreateSchoolDB9")]
+    partial class CreateSchoolDB9
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -26,6 +26,9 @@ namespace ConsoleAppEF_Core.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<string>("CertificateName")
+                        .HasColumnType("text");
 
                     b.Property<string>("CourseName")
                         .HasColumnType("text");

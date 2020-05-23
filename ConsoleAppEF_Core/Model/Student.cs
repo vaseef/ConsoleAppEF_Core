@@ -13,6 +13,7 @@ namespace ConsoleAppEF_Core.Model
         public int Maths { get; set; }
         public int English { get; set; }
         public int Chemistry { get; set; }
+        public int Zoology { get; set; }
 
     }
 
